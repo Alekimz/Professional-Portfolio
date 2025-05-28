@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Alex Kimeu</title>
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Project Portfolio of Alex Kimeu">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #1f2937;
+    }
+
+    .header {
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .logo-dot {
+      width: 12px;
+      height: 12px;
+      background-color: #4f46e5;
+      margin-right: 8px;
+      display: inline-block;
+    }
+
+    .name {
+      font-weight: 700;
+      font-size: 18px;
+      color: #000;
+      margin: 0;
+    }
+
+    .role {
+      font-size: 14px;
+      color: #6b7280;
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1f2937;
+      font-weight: 500;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #b88b4a;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    section .intro {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .project-card {
+      display: flex;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      gap: 20px;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .project-info {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .project-info h3 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #b88b4a;
+    }
+
+    .project-info p {
+      margin: 10px 0;
+      font-size: 15px;
+      color: #374151;
+    }
+
+    .project-card img {
+      width: 250px;
+      height: 180px;
+      object-fit: cover;
+      border-left: 1px solid #e5e7eb;
+    }
+
+    footer {
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #6b7280;
+      background-color: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 60px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    footer a:hover {
+      color: #b88b4a;
+    }
+
+    footer .social a {
+      margin-left: 15px;
+      color: #555;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .project-card {
+        flex-direction: column-reverse;
+      }
+
+      .project-card img {
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-top: 1px solid #e5e7eb;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-container">
+      <span class="logo-dot"></span>
+      <h1 class="name">Alex Kimeu</h1>
+      <span class="role">/ SOFTWARE DEVELOPER</span>
+    </div>
+   <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+         <li><a href="About.html">ABOUT ME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <p class="intro">Below is a collection of personal and freelance projects that showcase my skills in Python, GUI development, and problem-solving. Each one reflects my dedication to building useful, creative software.</p>
+
+    <div class="projects">
+      <a href="https://github.com/Alekimz/Disappearing-text-app" target="_blank" class="project-card">
+        <div class="project-info">
+          <h3>Disappearing Text App</h3>
+         <p>This app challenges users to improve their typing speed and consistency. If you stop typing for too long, all your progress disappears—so stay sharp and keep going!</p>
+          <p><strong>Tech:</strong> Python, Tkinter</p>
+        </div>
+        <img src="danger.png" alt="Disappearing Text App">
+      </a>
+
+      <a href="https://github.com/Alekimz/Image-watermarking-desktop-app" target="_blank" class="project-card">
+        <div class="project-info">
+          <h3>Image Watermarking Desktop App</h3>
+          <p>A user-friendly desktop tool that lets you add personalized text watermarks to your images. Ideal for photographers, creatives, or anyone who wants to brand or protect their visual work.</p>
+          <p><strong>Tech:</strong> Python, Tkinter, PIL</p>
+        </div>
+        <img src="watermark.jpg" alt="Watermarking App">
+      </a>
+
+      <a href="https://github.com/Alekimz/Tic-Tac-Toe" target="_blank" class="project-card">
+        <div class="project-info">
+          <h3>Tic Tac Toe Game</h3>
+         <p>A classic two-player Tic Tac Toe game with a clean graphical interface. Enjoy strategic fun with a friend on your computer, no internet needed.</p>
+          <p><strong>Tech:</strong> Python, Tkinter</p>
+        </div>
+        <img src="tictac.jpg" alt="Tic Tac Toe Game">
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2025 Alex Kimeu</div>
+    <div><strong>Call:</strong> 0716412775</div>
+    <div><strong>Email:</strong> <a href="mailto:muriithialex84@gmail.com">muriithialex84@gmail.com</a></div>
+    <div class="social">
+      <a href="https://github.com/Alekimz">GitHub</a>
+      <a href="https://instagram.com/justt_alexx_">Instagram</a>
+    </div>
+  </footer>
+
+</body>
+</html>

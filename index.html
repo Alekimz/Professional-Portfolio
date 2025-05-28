@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Kimeu | Software Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #1f2937;
+    }
+
+    .header {
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .logo-dot {
+      width: 12px;
+      height: 12px;
+      background-color: #4f46e5;
+      margin-right: 8px;
+      display: inline-block;
+    }
+
+    .name {
+      font-weight: 700;
+      font-size: 18px;
+      color: #000;
+      margin: 0;
+    }
+
+    .role {
+      font-size: 14px;
+      color: #6b7280;
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1f2937;
+      font-weight: 500;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #22c55e;
+    }
+
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px;
+      background-color: #f5f7fa;
+    }
+
+    .left-card {
+      width: 350px;
+      background-color: #ffffff;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .left-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .left-card h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .left-card .title {
+      font-size: 13px;
+      color: #6b7280;
+      letter-spacing: 1px;
+      margin-top: 5px;
+    }
+
+    .left-card .social-icons {
+      margin-top: 20px;
+    }
+
+    .left-card .social-icons a {
+      margin: 0 8px;
+      color: #1f2937;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .left-card .social-icons a:hover {
+      color: #22c55e;
+    }
+
+    .right-content {
+      flex: 1;
+      padding-left: 60px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .right-content h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .right-content h3 {
+      font-weight: 400;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #6b7280;
+    }
+
+    .buttons {
+      margin-bottom: 30px;
+    }
+
+    .buttons button {
+      padding: 10px 25px;
+      margin-right: 15px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 20px;
+      cursor: pointer;
+      border: none;
+      background-color: #4f46e5;
+      color: white;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+    }
+
+    .buttons button:hover {
+      transform: translateY(-2px);
+      background-color: #4338ca;
+    }
+
+    .right-content p {
+      max-width: 500px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #6b7280;
+      background-color: #ffffff;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    footer .social a {
+      margin-left: 15px;
+      color: #555;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    footer a:hover {
+      color: #22c55e;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .left-card {
+        width: 100%;
+      }
+
+      .right-content {
+        padding-left: 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <header class="header">
+    <div class="logo-container">
+      <span class="logo-dot"></span>
+      <h1 class="name">Alex Kimeu</h1>
+      <span class="role">/ SOFTWARE DEVELOPER</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="About.html">ABOUT ME</a></li>
+        <li><a href="projects page.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <!-- Left Card -->
+    <div class="left-card">
+      <img src="profile.jpg" alt="Alex Kimeu">
+      <h2>Alex Kimeu</h2>
+      <div class="title">PROJECT MANAGER</div>
+      <div class="social-icons">
+        <a href="https://instagram.com/justt_alexx_" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/0100786108" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/Alekimz" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-content">
+      <h1>Hello</h1>
+      <h3>Here’s who I am & what I do</h3>
+      <p>
+        I'm a passionate software and full stack developer with a focus on building scalable and user-friendly applications. Let’s build something amazing together!
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="section">
+      <p>© 2025 Alex Kimeu</p>
+    </div>
+    <div class="section">
+      <p><strong>Call</strong><br />0716412775</p>
+    </div>
+    <div class="section">
+      <p><strong>Write</strong><br /><a href="mailto:muriithialex84@gmail.com">muriithialex84@gmail.com</a></p>
+    </div>
+    <div class="section">
+      <p><strong>Follow</strong><br />
+        <a href="https://github.com/Alekimz">GitHub</a> |
+        <a href="https://instagram.com/justt_alexx_">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

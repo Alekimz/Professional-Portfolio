@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me - Alex Kimeu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #1f2937;
+    }
+
+    .header {
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .logo-dot {
+      width: 12px;
+      height: 12px;
+      background-color: #4f46e5;
+      margin-right: 8px;
+      display: inline-block;
+    }
+
+    .name {
+      font-weight: 700;
+      font-size: 18px;
+      color: #000;
+      margin: 0;
+    }
+
+    .role {
+      font-size: 14px;
+      color: #6b7280;
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1f2937;
+      font-weight: 500;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #22c55e;
+    }
+
+    .about-section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 30px;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #111827;
+    }
+
+    .about-content {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .about-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.15);
+    }
+
+
+    .about-text {
+      flex: 1;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #374151;
+    }
+
+    .about-text p {
+      margin-bottom: 1rem;
+    }
+
+    .about-text ul {
+      padding-left: 20px;
+      margin-bottom: 1rem;
+    }
+
+    .about-text li {
+      margin-bottom: 0.5rem;
+    }
+
+    .about-text a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .about-text a:hover {
+      text-decoration: underline;
+      color: #22c55e;
+    }
+
+    footer {
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #6b7280;
+      background-color: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 60px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    footer .social a {
+      margin-left: 15px;
+      color: #555;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    footer a:hover {
+      color: #22c55e;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+
+      .about-photo {
+        margin-bottom: 30px;
+        flex: none;
+        width: 100%;
+        max-width: 250px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <span class="logo-dot"></span>
+      <h1 class="name">Alex Kimeu</h1>
+      <span class="role">/ Software Developer</span>
+    </div>
+   <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+         <li><a href="projects page.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="profile.jpg" alt="Portrait of Alex Kimeu" class="about-photo" />
+      <div class="about-text">
+        <p>Hi! I’m <strong>Kimeu Alex Muriithi</strong>, a Software & Fullstack Developer with a passion for being creative and exploring the world of technology and the internet.</p>
+
+        <p><strong>Education:</strong></p>
+        <ul>
+          <li>2009 – 2018: Ol Donyo Sabuk Preparatory</li>
+          <li>2018 – 2019: Samros Academy</li>
+          <li>2020 – 2023: Mangu High School</li>
+          <li>2024 – 2025: Emobilis Mobile Tech Institute</li>
+          <li>2025 – Present: JKUAT University</li>
+        </ul>
+
+        <p><strong>Skills & Technologies:</strong> Skilled in Python and Tkinter, with experience in fullstack development.</p>
+
+        <p><strong>Interests & Hobbies:</strong> I enjoy freelance coding and exploring new projects that challenge my creativity and problem-solving skills.</p>
+
+        <p>Feel free to check out my <a href="projects page.html">projects</a> or <a href="contact.html">get in touch</a>!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2025 Alex Kimeu</div>
+    <div>
+      <a href="mailto:muriithialex84@gmail.com">muriithialex84@gmail.com</a> |
+      <a href="https://github.com/Alekimz" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Alex Kimeu Portfolio</title>
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Contact Alex Kimeu - Software Developer portfolio contact page" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #1f2937;
+    }
+    .header {
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+    .logo-dot {
+      width: 12px;
+      height: 12px;
+      background-color: #4f46e5;
+      margin-right: 8px;
+      display: inline-block;
+    }
+    .name {
+      font-weight: 700;
+      font-size: 18px;
+      color: #000;
+      margin: 0;
+    }
+    .role {
+      font-size: 14px;
+      color: #6b7280;
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #1f2937;
+      font-weight: 500;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #22c55e;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+      font-weight: 700;
+    }
+
+    p.intro {
+      font-size: 16px;
+      color: #4b5563;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    .contact-info a {
+      color: #4f46e5;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #22c55e;
+    }
+
+    form {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 12px 15px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 14px;
+      resize: vertical;
+      font-family: inherit;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #4f46e5;
+      box-shadow: 0 0 6px rgba(79, 70, 229, 0.3);
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      width: 150px;
+      padding: 12px;
+      font-weight: 700;
+      font-size: 15px;
+      color: white;
+      background-color: #4f46e5;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      align-self: flex-start;
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+    }
+
+    button:hover {
+      background-color: #4338ca;
+    }
+
+    footer {
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #6b7280;
+      background-color: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 80px;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    footer .social a {
+      margin-left: 15px;
+      color: #555;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    footer a:hover {
+      color: #22c55e;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        padding: 20px 30px;
+        gap: 15px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+      main {
+        margin: 30px 20px;
+        padding: 30px 25px;
+      }
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      footer .social a {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <span class="logo-dot"></span>
+      <h1 class="name">Alex Kimeu</h1>
+      <span class="role">/ SOFTWARE DEVELOPER</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+         <li><a href="About.html">ABOUT ME</a></li>
+        <li><a href="projects page.html">PROJECTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Me</h2>
+    <p class="intro">
+      Let's get in touch! Whether you want to collaborate, ask questions, or just say hello — feel free to reach out.
+    </p>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:muriithialex84@gmail.com">muriithialex84@gmail.com</a></p>
+      <p><strong>Phone:</strong> 0716412775</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Alekimz" target="_blank" rel="noopener noreferrer">github.com/Alekimz</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/justt_alexx_" target="_blank" rel="noopener noreferrer">@justt_alexx_</a></p>
+    </div>
+
+    <form action="mailto:muriithialex84@gmail.com" method="POST" enctype="text/plain" >
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <div>© 2025 Alex Kimeu</div>
+    <div><strong>Call:</strong> 0716412775</div>
+    <div><strong>Write:</strong> <a href="mailto:muriithialex84@gmail.com">muriithialex84@gmail.com</a></div>
+    <div class="social">
+      <a href="https://github.com/Alekimz" target="_blank" rel="noopener noreferrer">GitHub</a> |
+      <a href="https://instagram.com/justt_alexx_" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
